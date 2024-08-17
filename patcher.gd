@@ -56,6 +56,15 @@ func try_start():
 	
 	updates = {}
 
+func cancel():
+	if runner != null:
+		runner.interrupt()
+		runner = null
+		cancelled.emit()
+
+signal solved
+signal cancelled
+
 func _on_partial_solution(problem: WFC2DPatchProblem, state: WFCSolverState):
 	#problem.render_state_to_map(state)
 	pass
@@ -66,6 +75,7 @@ func _on_problem_solved(problem: WFC2DPatchProblem, state: WFCSolverState):
 
 func _on_all_solved():
 	runner = null
+	solved.emit()
 
 func is_busy() -> bool:
 	return runner != null

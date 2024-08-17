@@ -19,6 +19,20 @@ func _draw() -> void:
 			2.0,
 		)
 
+func create_mesh() -> Mesh:
+	var im := ImmediateMesh.new()
+
+	for pos in selected.keys():
+		var r := Rect2(tilemap.map_to_local(pos), Vector2.ZERO).grow(8)
+		im.surface_begin(Mesh.PRIMITIVE_TRIANGLE_STRIP)
+		im.surface_add_vertex_2d(Vector2(r.position.x, r.position.y))
+		im.surface_add_vertex_2d(Vector2(r.end.x, r.position.y))
+		im.surface_add_vertex_2d(Vector2(r.position.x, r.end.y))
+		im.surface_add_vertex_2d(Vector2(r.end.x, r.end.y))
+		im.surface_end()
+
+	return im
+
 func _get_selection() -> Array[Vector2i]:
 	var arr: Array[Vector2i] = []
 	for p in selected.keys():

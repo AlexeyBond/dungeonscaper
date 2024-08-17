@@ -34,3 +34,7 @@ func _add_cell(pos: Vector2i):
 func _get_selection() -> Array[Vector2i]:
 	assert(false)
 	return []
+
+func create_mesh() -> Mesh:
+	assert(false)
+	return null
