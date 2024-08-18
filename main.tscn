@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://8gbabiwd4epy"]
+[gd_scene load_steps=23 format=4 uid="uid://8gbabiwd4epy"]
 
 [ext_resource type="Script" path="res://addons/wfc/nodes/layered_map_2d.gd" id="1_gu2sh"]
 [ext_resource type="Script" path="res://patcher.gd" id="1_k2kwp"]
@@ -15,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://bpj6ts6w32k5o" path="res://assets/tile_rails_icon.png" id="12_j1x5i"]
 [ext_resource type="Texture2D" uid="uid://d037avii7o8sk" path="res://assets/tool_paint_icon.png" id="14_vd0ys"]
 [ext_resource type="Texture2D" uid="uid://dypxccmrfr1m1" path="res://assets/tool_rect_icon.png" id="15_rlvaa"]
+[ext_resource type="Texture2D" uid="uid://bdsehf8wp7065" path="res://assets/restart_icon.png" id="16_wel8k"]
+[ext_resource type="Texture2D" uid="uid://dlm6tmsqeflmn" path="res://assets/exit_icon.png" id="17_soe8w"]
 
 [sub_resource type="GDScript" id="GDScript_voyci"]
 script/source = "extends Node2D
@@ -24,6 +26,7 @@ var tool_select_group: ButtonGroup
 
 func _ready() -> void:
 	tile_select_group = ButtonGroup.new()
+	tile_select_group.pressed.connect(_on_tile_select_pressed)
 	for node in get_tree().get_nodes_in_group('tile_select_buttons'):
 		node.button_group = tile_select_group
 	tile_select_group.get_buttons()[0].set_pressed_no_signal(true)
@@ -40,6 +43,9 @@ func _ready() -> void:
 @onready var cell_highlight: CellHighlight = %CellHighlight
 @onready var patcher: WFC2DPatcher = $WFC2DPatcher
 @onready var selectable_map: TileMapLayer = $WFC2DLayeredMap/decorations
+
+func _on_tile_select_pressed(btn: TileSelectButton):
+	cell_highlight.set_texture(btn.icon)
 
 func _get_mouse_map_position() -> Vector2i:
 	return selectable_map.local_to_map(selectable_map.get_local_mouse_position())
@@ -90,6 +96,13 @@ func _on_wfc_2d_patcher_solved() -> void:
 func _on_wfc_2d_patcher_cancelled() -> void:
 	process_indicator_meshinstance.queue_free()
 	process_indicator_meshinstance = null
+
+
+func _on_restart_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://intro.tscn\")
+
+func _on_exit_button_pressed() -> void:
+	get_tree().quit()
 "
 
 [sub_resource type="Resource" id="Resource_m13sn"]
@@ -232,5 +245,25 @@ icon_alignment = 1
 expand_icon = true
 script = SubResource("GDScript_24b7d")
 
+[node name="Label3" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "App"
+horizontal_alignment = 1
+
+[node name="restart_button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+icon = ExtResource("16_wel8k")
+expand_icon = true
+
+[node name="exit_button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+icon = ExtResource("17_soe8w")
+expand_icon = true
+
 [connection signal="cancelled" from="WFC2DPatcher" to="." method="_on_wfc_2d_patcher_cancelled"]
 [connection signal="solved" from="WFC2DPatcher" to="." method="_on_wfc_2d_patcher_solved"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/restart_button" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]

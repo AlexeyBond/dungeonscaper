@@ -3,7 +3,7 @@ class_name CellHighlight
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	$AnimationPlayer.play("blink")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,3 +16,6 @@ func _draw() -> void:
 		Color.RED,
 		2.0,
 	)
+
+func set_texture(tx: Texture):
+	$Sprite2D.texture = tx

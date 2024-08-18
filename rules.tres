@@ -1,823 +1,823 @@
 [gd_resource type="Resource" script_class="WFCRules2D" load_steps=121 format=3 uid="uid://dtlti6hgb88w"]
 
-[ext_resource type="Script" path="res://addons/wfc/utils/bitmatrix.gd" id="1_e7ui8"]
-[ext_resource type="Script" path="res://addons/wfc/utils/bitset.gd" id="2_7wg56"]
-[ext_resource type="Script" path="res://addons/wfc/problems/2d/mappers/mapper_2d.gd" id="3_5wrqu"]
-[ext_resource type="Script" path="res://addons/wfc/problems/2d/mappers/mapper_2d_tilemaplayer.gd" id="4_0stu4"]
-[ext_resource type="TileSet" uid="uid://f5ab14o2k2wy" path="res://addons/wfc/examples/assets/kenney-tiny-dungeon/tile-set-main.tres" id="5_6nlti"]
-[ext_resource type="TileSet" uid="uid://drvu3d0pwtf50" path="res://addons/wfc/examples/assets/kenney-tiny-dungeon/tile-set-decorations.tres" id="6_e4paj"]
-[ext_resource type="Script" path="res://addons/wfc/problems/2d/mappers/mapper_2d_layered_map.gd" id="7_5wj2l"]
-[ext_resource type="Script" path="res://addons/wfc/problems/2d/rules_2d.gd" id="8_pvbct"]
+[ext_resource type="Script" path="res://addons/wfc/utils/bitmatrix.gd" id="1_3wh2b"]
+[ext_resource type="Script" path="res://addons/wfc/utils/bitset.gd" id="2_5ssgk"]
+[ext_resource type="Script" path="res://addons/wfc/problems/2d/mappers/mapper_2d.gd" id="3_egg8i"]
+[ext_resource type="Script" path="res://addons/wfc/problems/2d/mappers/mapper_2d_tilemaplayer.gd" id="4_nkh70"]
+[ext_resource type="TileSet" uid="uid://f5ab14o2k2wy" path="res://addons/wfc/examples/assets/kenney-tiny-dungeon/tile-set-main.tres" id="5_4tjwi"]
+[ext_resource type="TileSet" uid="uid://drvu3d0pwtf50" path="res://addons/wfc/examples/assets/kenney-tiny-dungeon/tile-set-decorations.tres" id="6_xpypy"]
+[ext_resource type="Script" path="res://addons/wfc/problems/2d/mappers/mapper_2d_layered_map.gd" id="7_jrr3q"]
+[ext_resource type="Script" path="res://addons/wfc/problems/2d/rules_2d.gd" id="8_kv2rj"]
 
-[sub_resource type="Resource" id="Resource_03wt7"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_3xwvt"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_k1f3b"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_8mwfo"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_dvdt0"]
-script = ExtResource("2_7wg56")
-data0 = 16777222
+[sub_resource type="Resource" id="Resource_x7wxb"]
+script = ExtResource("2_5ssgk")
+data0 = 8388614
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_hpaft"]
-script = ExtResource("2_7wg56")
-data0 = 16777222
+[sub_resource type="Resource" id="Resource_b4h3j"]
+script = ExtResource("2_5ssgk")
+data0 = 8388614
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_r0dkx"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_pfgfl"]
+script = ExtResource("2_5ssgk")
 data0 = 8
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_knyg8"]
-script = ExtResource("2_7wg56")
-data0 = 4503599632099344
+[sub_resource type="Resource" id="Resource_j4825"]
+script = ExtResource("2_5ssgk")
+data0 = 5066549583153168
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_05rqe"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_l6d78"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_diipr"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_e3vvu"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_kp5va"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_mipko"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_cduc3"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
+[sub_resource type="Resource" id="Resource_i3gme"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_rlwue"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
+[sub_resource type="Resource" id="Resource_l0mi7"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_o4v06"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_hjoij"]
+script = ExtResource("2_5ssgk")
 data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_veys3"]
-script = ExtResource("2_7wg56")
-data0 = 4503599632099344
+[sub_resource type="Resource" id="Resource_wdlb5"]
+script = ExtResource("2_5ssgk")
+data0 = 5066549583153168
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_05j0p"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_3btok"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_5ra5j"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_b0efe"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_fb56h"]
+script = ExtResource("2_5ssgk")
+data0 = 1125899906940928
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_k077w"]
+script = ExtResource("2_5ssgk")
+data0 = 1125899906908160
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_4q3s3"]
+script = ExtResource("2_5ssgk")
 data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_rmeih"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_vs8sf"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_0deyw"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_r4f6g"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_5ushq"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_o61rk"]
-script = ExtResource("2_7wg56")
-data0 = 1125899907039232
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_217mn"]
-script = ExtResource("2_7wg56")
-data0 = 1125899906973696
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_1f5l1"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_u40o4"]
+script = ExtResource("2_5ssgk")
 data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_ym7st"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_epp43"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_jph7l"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_k7fny"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_cw6aa"]
-script = ExtResource("2_7wg56")
-data0 = 1024
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_xh3id"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_a85xe"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_ms3n6"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_k8lnq"]
+script = ExtResource("2_5ssgk")
 data0 = 6
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_jdwrl"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
+[sub_resource type="Resource" id="Resource_lcyi4"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_ydas0"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_jficl"]
+script = ExtResource("2_5ssgk")
+data0 = 33554432
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_leo6i"]
+script = ExtResource("2_5ssgk")
 data0 = 67108864
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_flors"]
-script = ExtResource("2_7wg56")
-data0 = 134217728
+[sub_resource type="Resource" id="Resource_x8yeb"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_bjkls"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
+[sub_resource type="Resource" id="Resource_h7lwv"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_aplgu"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
+[sub_resource type="Resource" id="Resource_j0ybh"]
+script = ExtResource("2_5ssgk")
+data0 = 35828757197025
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_nj5o6"]
-script = ExtResource("2_7wg56")
-data0 = 71657514389729
+[sub_resource type="Resource" id="Resource_8ayj4"]
+script = ExtResource("2_5ssgk")
+data0 = 142939732836352
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_pycf8"]
-script = ExtResource("2_7wg56")
-data0 = 285879465672704
+[sub_resource type="Resource" id="Resource_5cfr8"]
+script = ExtResource("2_5ssgk")
+data0 = 142938659094528
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_t6joa"]
-script = ExtResource("2_7wg56")
-data0 = 285877318189056
+[sub_resource type="Resource" id="Resource_35jbr"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_2pn6s"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_5s1eo"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_is6ft"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_lt4ym"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_w0hco"]
+script = ExtResource("2_5ssgk")
 data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_q7opo"]
-script = ExtResource("2_7wg56")
-data0 = 68719476736
+[sub_resource type="Resource" id="Resource_d2fuk"]
+script = ExtResource("2_5ssgk")
+data0 = 34359738368
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_nqar6"]
-script = ExtResource("2_7wg56")
-data0 = 276522337024
+[sub_resource type="Resource" id="Resource_n0kh0"]
+script = ExtResource("2_5ssgk")
+data0 = 138261168896
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_14c34"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_lqhdx"]
+script = ExtResource("2_5ssgk")
 data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_lddva"]
-script = ExtResource("2_7wg56")
-data0 = 549755813888
+[sub_resource type="Resource" id="Resource_hfpvv"]
+script = ExtResource("2_5ssgk")
+data0 = 274877906944
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_ejao3"]
-script = ExtResource("2_7wg56")
-data0 = 71657514389729
+[sub_resource type="Resource" id="Resource_5j45x"]
+script = ExtResource("2_5ssgk")
+data0 = 35828757197025
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_mnjcj"]
-script = ExtResource("2_7wg56")
-data0 = 660995746877665
+[sub_resource type="Resource" id="Resource_ssjp4"]
+script = ExtResource("2_5ssgk")
+data0 = 330497873440993
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_0kld2"]
-script = ExtResource("2_7wg56")
-data0 = 281481419161600
+[sub_resource type="Resource" id="Resource_h7x6i"]
+script = ExtResource("2_5ssgk")
+data0 = 140740709580800
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_1d035"]
-script = ExtResource("2_7wg56")
-data0 = 660995746877665
+[sub_resource type="Resource" id="Resource_fpbom"]
+script = ExtResource("2_5ssgk")
+data0 = 330497873440993
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_8xgin"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_ya8s7"]
+script = ExtResource("2_5ssgk")
 data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_xwofn"]
-script = ExtResource("2_7wg56")
-data0 = 35184372088832
+[sub_resource type="Resource" id="Resource_t0vjj"]
+script = ExtResource("2_5ssgk")
+data0 = 17592186044416
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_t22uf"]
-script = ExtResource("2_7wg56")
-data0 = 71657514389729
+[sub_resource type="Resource" id="Resource_bisnw"]
+script = ExtResource("2_5ssgk")
+data0 = 35828757197025
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_nnlhm"]
-script = ExtResource("2_7wg56")
-data0 = 660995746877665
+[sub_resource type="Resource" id="Resource_q8gxp"]
+script = ExtResource("2_5ssgk")
+data0 = 330497873440993
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_3n8h8"]
-script = ExtResource("2_7wg56")
-data0 = 4404488962048
+[sub_resource type="Resource" id="Resource_dvt4s"]
+script = ExtResource("2_5ssgk")
+data0 = 2202244481024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_bjw70"]
-script = ExtResource("2_7wg56")
-data0 = 803940848423137
+[sub_resource type="Resource" id="Resource_8wmle"]
+script = ExtResource("2_5ssgk")
+data0 = 1024
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_iqkhi"]
-script = ExtResource("2_7wg56")
-data0 = 1125899907039232
+[sub_resource type="Resource" id="Resource_b6fge"]
+script = ExtResource("2_5ssgk")
+data0 = 401970424213729
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_w32pc"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_04ca8"]
+script = ExtResource("2_5ssgk")
+data0 = 1125899906940928
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_w5snn"]
+script = ExtResource("2_5ssgk")
 data0 = 2251799813685248
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_j1lrn"]
-script = ExtResource("1_e7ui8")
-rows = Array[ExtResource("2_7wg56")]([SubResource("Resource_03wt7"), SubResource("Resource_k1f3b"), SubResource("Resource_dvdt0"), SubResource("Resource_hpaft"), SubResource("Resource_r0dkx"), SubResource("Resource_knyg8"), SubResource("Resource_05rqe"), SubResource("Resource_diipr"), SubResource("Resource_kp5va"), SubResource("Resource_cduc3"), SubResource("Resource_rlwue"), SubResource("Resource_o4v06"), SubResource("Resource_veys3"), SubResource("Resource_05j0p"), SubResource("Resource_rmeih"), SubResource("Resource_0deyw"), SubResource("Resource_5ushq"), SubResource("Resource_o61rk"), SubResource("Resource_217mn"), SubResource("Resource_1f5l1"), SubResource("Resource_ym7st"), SubResource("Resource_jph7l"), SubResource("Resource_cw6aa"), SubResource("Resource_xh3id"), SubResource("Resource_a85xe"), SubResource("Resource_ms3n6"), SubResource("Resource_jdwrl"), SubResource("Resource_ydas0"), SubResource("Resource_flors"), SubResource("Resource_bjkls"), SubResource("Resource_aplgu"), SubResource("Resource_nj5o6"), SubResource("Resource_pycf8"), SubResource("Resource_t6joa"), SubResource("Resource_2pn6s"), SubResource("Resource_is6ft"), SubResource("Resource_lt4ym"), SubResource("Resource_q7opo"), SubResource("Resource_nqar6"), SubResource("Resource_14c34"), SubResource("Resource_lddva"), SubResource("Resource_ejao3"), SubResource("Resource_mnjcj"), SubResource("Resource_0kld2"), SubResource("Resource_1d035"), SubResource("Resource_8xgin"), SubResource("Resource_xwofn"), SubResource("Resource_t22uf"), SubResource("Resource_nnlhm"), SubResource("Resource_3n8h8"), SubResource("Resource_bjw70"), SubResource("Resource_iqkhi"), SubResource("Resource_w32pc")])
+[sub_resource type="Resource" id="Resource_52qjd"]
+script = ExtResource("1_3wh2b")
+rows = Array[ExtResource("2_5ssgk")]([SubResource("Resource_3xwvt"), SubResource("Resource_8mwfo"), SubResource("Resource_x7wxb"), SubResource("Resource_b4h3j"), SubResource("Resource_pfgfl"), SubResource("Resource_j4825"), SubResource("Resource_l6d78"), SubResource("Resource_e3vvu"), SubResource("Resource_mipko"), SubResource("Resource_i3gme"), SubResource("Resource_l0mi7"), SubResource("Resource_hjoij"), SubResource("Resource_wdlb5"), SubResource("Resource_3btok"), SubResource("Resource_5ra5j"), SubResource("Resource_b0efe"), SubResource("Resource_fb56h"), SubResource("Resource_k077w"), SubResource("Resource_4q3s3"), SubResource("Resource_vs8sf"), SubResource("Resource_r4f6g"), SubResource("Resource_u40o4"), SubResource("Resource_epp43"), SubResource("Resource_k7fny"), SubResource("Resource_k8lnq"), SubResource("Resource_lcyi4"), SubResource("Resource_jficl"), SubResource("Resource_leo6i"), SubResource("Resource_x8yeb"), SubResource("Resource_h7lwv"), SubResource("Resource_j0ybh"), SubResource("Resource_8ayj4"), SubResource("Resource_5cfr8"), SubResource("Resource_35jbr"), SubResource("Resource_5s1eo"), SubResource("Resource_w0hco"), SubResource("Resource_d2fuk"), SubResource("Resource_n0kh0"), SubResource("Resource_lqhdx"), SubResource("Resource_hfpvv"), SubResource("Resource_5j45x"), SubResource("Resource_ssjp4"), SubResource("Resource_h7x6i"), SubResource("Resource_fpbom"), SubResource("Resource_ya8s7"), SubResource("Resource_t0vjj"), SubResource("Resource_bisnw"), SubResource("Resource_q8gxp"), SubResource("Resource_dvt4s"), SubResource("Resource_8wmle"), SubResource("Resource_b6fge"), SubResource("Resource_04ca8"), SubResource("Resource_w5snn")])
 width = 53
 height = 53
 
-[sub_resource type="Resource" id="Resource_2opoi"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_tfw7x"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_cskik"]
-script = ExtResource("2_7wg56")
-data0 = 3344437765265649
+[sub_resource type="Resource" id="Resource_4ikkx"]
+script = ExtResource("2_5ssgk")
+data0 = 3361068742899953
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_wo7nj"]
-script = ExtResource("2_7wg56")
-data0 = 1092637951580401
+[sub_resource type="Resource" id="Resource_kq8c5"]
+script = ExtResource("2_5ssgk")
+data0 = 1109268929214705
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_cn20c"]
-script = ExtResource("2_7wg56")
-data0 = 2218537858423025
+[sub_resource type="Resource" id="Resource_dkh2u"]
+script = ExtResource("2_5ssgk")
+data0 = 2235168836057329
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_6xlbp"]
-script = ExtResource("2_7wg56")
-data0 = 1092637951580401
+[sub_resource type="Resource" id="Resource_rjluf"]
+script = ExtResource("2_5ssgk")
+data0 = 1109268929214705
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_hwwmg"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_84bor"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_ftc81"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_1v2qi"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_30h4f"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_tqdb3"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_qal1k"]
-script = ExtResource("2_7wg56")
-data0 = 262402
+[sub_resource type="Resource" id="Resource_e3gx6"]
+script = ExtResource("2_5ssgk")
+data0 = 131330
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_bp0cp"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_svws7"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_5obyr"]
-script = ExtResource("2_7wg56")
-data0 = 67175432
+[sub_resource type="Resource" id="Resource_ild6h"]
+script = ExtResource("2_5ssgk")
+data0 = 33588232
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_v774y"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_0xi8u"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_5lcx6"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_awj8y"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_bojtm"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_ioihl"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_o3ca5"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_ystjt"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_81bcu"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_8bs58"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_xleti"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_ntkq3"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_a1p8b"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_xwtjh"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_bogah"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_qi3jq"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_pf67v"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_a2yq0"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_0lt8w"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_s3lo7"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_21jm3"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_6gdms"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_p8bi0"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_uq2f6"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_c3ve7"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_red63"]
+script = ExtResource("2_5ssgk")
+data0 = 33555464
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_ow0xo"]
-script = ExtResource("2_7wg56")
-data0 = 67109896
-data1 = 0
-dataX = PackedInt64Array()
-size = 53
-
-[sub_resource type="Resource" id="Resource_us0ip"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_11pjo"]
+script = ExtResource("2_5ssgk")
 data0 = 258
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_g2l4x"]
-script = ExtResource("2_7wg56")
-data0 = 67175432
+[sub_resource type="Resource" id="Resource_lvrxw"]
+script = ExtResource("2_5ssgk")
+data0 = 33588232
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_kq63o"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_b7x1w"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_fpydn"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_0iceu"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_48a33"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_mfi3h"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_rtyta"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_u122l"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_h3nf6"]
-script = ExtResource("2_7wg56")
-data0 = 7988759848737009
+[sub_resource type="Resource" id="Resource_aprhs"]
+script = ExtResource("2_5ssgk")
+data0 = 8497979551742193
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_jv1c2"]
-script = ExtResource("2_7wg56")
-data0 = 8833189073836273
+[sub_resource type="Resource" id="Resource_rewmv"]
+script = ExtResource("2_5ssgk")
+data0 = 8920194164291825
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_fmvbs"]
-script = ExtResource("2_7wg56")
-data0 = 7988759848737009
+[sub_resource type="Resource" id="Resource_7sp6f"]
+script = ExtResource("2_5ssgk")
+data0 = 8497979551742193
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_bf86v"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_gau3b"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_lj6im"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_cxydw"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_m1gat"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_6bogc"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_1jb4h"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_ghnel"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_ttmc3"]
-script = ExtResource("2_7wg56")
-data0 = 276538851844
+[sub_resource type="Resource" id="Resource_118km"]
+script = ExtResource("2_5ssgk")
+data0 = 138269426180
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_gtjji"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_hjqqd"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_21346"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_4ww0r"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_0pe7a"]
-script = ExtResource("2_7wg56")
-data0 = 7988759848737009
+[sub_resource type="Resource" id="Resource_8b6d5"]
+script = ExtResource("2_5ssgk")
+data0 = 8497979551742193
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_0etqx"]
-script = ExtResource("2_7wg56")
-data0 = 8833189073836273
+[sub_resource type="Resource" id="Resource_8hpp2"]
+script = ExtResource("2_5ssgk")
+data0 = 8920194164291825
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_74ulg"]
-script = ExtResource("2_7wg56")
-data0 = 8833189073836273
+[sub_resource type="Resource" id="Resource_bqesh"]
+script = ExtResource("2_5ssgk")
+data0 = 8920194164291825
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_kgirg"]
-script = ExtResource("2_7wg56")
-data0 = 32985348833280
+[sub_resource type="Resource" id="Resource_b8trv"]
+script = ExtResource("2_5ssgk")
+data0 = 16492674416640
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_47a0n"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_6fsfq"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_o1ghe"]
-script = ExtResource("2_7wg56")
-data0 = 8973937299609841
+[sub_resource type="Resource" id="Resource_fpm13"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_x4f2y"]
-script = ExtResource("2_7wg56")
-data0 = 30786325577728
+[sub_resource type="Resource" id="Resource_noksp"]
+script = ExtResource("2_5ssgk")
+data0 = 15393162788864
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_j234p"]
-script = ExtResource("2_7wg56")
-data0 = 28587302322176
+[sub_resource type="Resource" id="Resource_yk77a"]
+script = ExtResource("2_5ssgk")
+data0 = 14293651161088
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_q76af"]
-script = ExtResource("2_7wg56")
-data0 = 24189255811072
+[sub_resource type="Resource" id="Resource_qfppw"]
+script = ExtResource("2_5ssgk")
+data0 = 12094627905536
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_stxre"]
-script = ExtResource("2_7wg56")
-data0 = 262402
+[sub_resource type="Resource" id="Resource_dvp03"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_6fa4b"]
-script = ExtResource("2_7wg56")
-data0 = 67175432
+[sub_resource type="Resource" id="Resource_7s3jk"]
+script = ExtResource("2_5ssgk")
+data0 = 131330
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_4tmfu"]
-script = ExtResource("2_7wg56")
-data0 = 8192
+[sub_resource type="Resource" id="Resource_gyw08"]
+script = ExtResource("2_5ssgk")
+data0 = 33588232
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_yi1n5"]
-script = ExtResource("1_e7ui8")
-rows = Array[ExtResource("2_7wg56")]([SubResource("Resource_2opoi"), SubResource("Resource_cskik"), SubResource("Resource_wo7nj"), SubResource("Resource_cn20c"), SubResource("Resource_6xlbp"), SubResource("Resource_hwwmg"), SubResource("Resource_ftc81"), SubResource("Resource_30h4f"), SubResource("Resource_qal1k"), SubResource("Resource_bp0cp"), SubResource("Resource_5obyr"), SubResource("Resource_v774y"), SubResource("Resource_5lcx6"), SubResource("Resource_bojtm"), SubResource("Resource_o3ca5"), SubResource("Resource_81bcu"), SubResource("Resource_xleti"), SubResource("Resource_a1p8b"), SubResource("Resource_bogah"), SubResource("Resource_pf67v"), SubResource("Resource_0lt8w"), SubResource("Resource_21jm3"), SubResource("Resource_p8bi0"), SubResource("Resource_c3ve7"), SubResource("Resource_ow0xo"), SubResource("Resource_us0ip"), SubResource("Resource_g2l4x"), SubResource("Resource_kq63o"), SubResource("Resource_fpydn"), SubResource("Resource_48a33"), SubResource("Resource_rtyta"), SubResource("Resource_h3nf6"), SubResource("Resource_jv1c2"), SubResource("Resource_fmvbs"), SubResource("Resource_bf86v"), SubResource("Resource_lj6im"), SubResource("Resource_m1gat"), SubResource("Resource_1jb4h"), SubResource("Resource_ttmc3"), SubResource("Resource_gtjji"), SubResource("Resource_21346"), SubResource("Resource_0pe7a"), SubResource("Resource_0etqx"), SubResource("Resource_74ulg"), SubResource("Resource_kgirg"), SubResource("Resource_47a0n"), SubResource("Resource_o1ghe"), SubResource("Resource_x4f2y"), SubResource("Resource_j234p"), SubResource("Resource_q76af"), SubResource("Resource_stxre"), SubResource("Resource_6fa4b"), SubResource("Resource_4tmfu")])
+[sub_resource type="Resource" id="Resource_wc0yb"]
+script = ExtResource("2_5ssgk")
+data0 = 8990568277178609
+data1 = 0
+dataX = PackedInt64Array()
+size = 53
+
+[sub_resource type="Resource" id="Resource_ljay1"]
+script = ExtResource("1_3wh2b")
+rows = Array[ExtResource("2_5ssgk")]([SubResource("Resource_tfw7x"), SubResource("Resource_4ikkx"), SubResource("Resource_kq8c5"), SubResource("Resource_dkh2u"), SubResource("Resource_rjluf"), SubResource("Resource_84bor"), SubResource("Resource_1v2qi"), SubResource("Resource_tqdb3"), SubResource("Resource_e3gx6"), SubResource("Resource_svws7"), SubResource("Resource_ild6h"), SubResource("Resource_0xi8u"), SubResource("Resource_awj8y"), SubResource("Resource_ioihl"), SubResource("Resource_ystjt"), SubResource("Resource_8bs58"), SubResource("Resource_ntkq3"), SubResource("Resource_xwtjh"), SubResource("Resource_qi3jq"), SubResource("Resource_a2yq0"), SubResource("Resource_s3lo7"), SubResource("Resource_6gdms"), SubResource("Resource_uq2f6"), SubResource("Resource_red63"), SubResource("Resource_11pjo"), SubResource("Resource_lvrxw"), SubResource("Resource_b7x1w"), SubResource("Resource_0iceu"), SubResource("Resource_mfi3h"), SubResource("Resource_u122l"), SubResource("Resource_aprhs"), SubResource("Resource_rewmv"), SubResource("Resource_7sp6f"), SubResource("Resource_gau3b"), SubResource("Resource_cxydw"), SubResource("Resource_6bogc"), SubResource("Resource_ghnel"), SubResource("Resource_118km"), SubResource("Resource_hjqqd"), SubResource("Resource_4ww0r"), SubResource("Resource_8b6d5"), SubResource("Resource_8hpp2"), SubResource("Resource_bqesh"), SubResource("Resource_b8trv"), SubResource("Resource_6fsfq"), SubResource("Resource_fpm13"), SubResource("Resource_noksp"), SubResource("Resource_yk77a"), SubResource("Resource_qfppw"), SubResource("Resource_dvp03"), SubResource("Resource_7s3jk"), SubResource("Resource_gyw08"), SubResource("Resource_wc0yb")])
 width = 53
 height = 53
 
-[sub_resource type="Resource" id="Resource_ll06u"]
-script = ExtResource("2_7wg56")
+[sub_resource type="Resource" id="Resource_q82ib"]
+script = ExtResource("2_5ssgk")
 data0 = 128
 data1 = 0
 dataX = PackedInt64Array()
 size = 53
 
-[sub_resource type="Resource" id="Resource_qqlt2"]
-script = ExtResource("4_0stu4")
+[sub_resource type="Resource" id="Resource_wkbtc"]
+script = ExtResource("4_nkh70")
 use_builtin_probabilities = true
-tile_set = ExtResource("5_6nlti")
+tile_set = ExtResource("5_4tjwi")
 attrs_to_id = {
 Vector4i(0, 0, 0, 0): 5,
-Vector4i(0, 0, 1, 0): 29,
-Vector4i(0, 0, 2, 0): 28,
+Vector4i(0, 0, 1, 0): 28,
+Vector4i(0, 0, 2, 0): 27,
 Vector4i(0, 0, 4, 0): 0,
 Vector4i(0, 1, 0, 0): 8,
 Vector4i(0, 1, 1, 0): 10,
-Vector4i(0, 1, 2, 0): 26,
-Vector4i(0, 1, 4, 0): 33,
+Vector4i(0, 1, 2, 0): 25,
+Vector4i(0, 1, 4, 0): 30,
 Vector4i(0, 2, 0, 0): 3,
-Vector4i(0, 2, 1, 0): 11,
+Vector4i(0, 2, 1, 0): 29,
 Vector4i(0, 2, 2, 0): 4,
-Vector4i(0, 2, 4, 0): 22,
+Vector4i(0, 2, 4, 0): 21,
 Vector4i(0, 3, 0, 0): 9,
 Vector4i(0, 3, 1, 0): 6,
-Vector4i(0, 3, 2, 0): 27,
-Vector4i(0, 3, 4, 0): 21,
+Vector4i(0, 3, 2, 0): 26,
+Vector4i(0, 3, 4, 0): 20,
 Vector4i(0, 4, 0, 0): 1,
 Vector4i(0, 4, 1, 0): 2,
-Vector4i(0, 4, 2, 0): 13,
-Vector4i(0, 4, 3, 0): 12,
-Vector4i(0, 5, 0, 0): 30,
-Vector4i(0, 5, 1, 0): 31,
-Vector4i(0, 5, 2, 0): 14,
-Vector4i(0, 5, 3, 0): 34,
+Vector4i(0, 4, 2, 0): 12,
+Vector4i(0, 4, 3, 0): 11,
+Vector4i(0, 5, 0, 0): 34,
+Vector4i(0, 5, 1, 0): 33,
+Vector4i(0, 5, 2, 0): 13,
+Vector4i(0, 5, 3, 0): 31,
 Vector4i(0, 6, 0, 0): 7,
-Vector4i(0, 6, 1, 0): 15,
-Vector4i(0, 6, 2, 0): 16,
-Vector4i(0, 6, 3, 0): 35,
-Vector4i(0, 7, 0, 0): 17,
-Vector4i(0, 7, 3, 0): 18,
-Vector4i(0, 8, 0, 0): 25,
-Vector4i(0, 8, 1, 0): 19,
-Vector4i(0, 8, 2, 0): 20,
-Vector4i(0, 8, 3, 0): 23,
-Vector4i(0, 9, 4, 0): 24,
-Vector4i(0, 11, 4, 0): 32
+Vector4i(0, 6, 1, 0): 14,
+Vector4i(0, 6, 2, 0): 15,
+Vector4i(0, 6, 3, 0): 32,
+Vector4i(0, 7, 0, 0): 16,
+Vector4i(0, 7, 3, 0): 17,
+Vector4i(0, 8, 0, 0): 24,
+Vector4i(0, 8, 1, 0): 18,
+Vector4i(0, 8, 2, 0): 19,
+Vector4i(0, 8, 3, 0): 22,
+Vector4i(0, 9, 4, 0): 23,
+Vector4i(0, 11, 4, 0): 35
 }
 probability_meta_key = "wfc_probability"
 
-[sub_resource type="Resource" id="Resource_41bit"]
-script = ExtResource("4_0stu4")
+[sub_resource type="Resource" id="Resource_ae3qy"]
+script = ExtResource("4_nkh70")
 use_builtin_probabilities = true
-tile_set = ExtResource("6_e4paj")
+tile_set = ExtResource("6_xpypy")
 attrs_to_id = {
 Vector4i(0, 1, 6, 0): 2,
 Vector4i(0, 2, 6, 0): 1,
@@ -838,75 +838,75 @@ Vector4i(0, 11, 7, 0): 12
 }
 probability_meta_key = "wfc_probability"
 
-[sub_resource type="Resource" id="Resource_iqmql"]
-script = ExtResource("7_5wj2l")
+[sub_resource type="Resource" id="Resource_ghtxy"]
+script = ExtResource("7_jrr3q")
 layer_names = Array[String](["main", "decorations"])
-layer_mappers = Array[ExtResource("3_5wrqu")]([SubResource("Resource_qqlt2"), SubResource("Resource_41bit")])
+layer_mappers = Array[ExtResource("3_egg8i")]([SubResource("Resource_wkbtc"), SubResource("Resource_ae3qy")])
 use_probability_meta = false
 attrs_to_id = {
+PackedInt32Array(1, -1): 1,
 PackedInt32Array(6, -1): 2,
 PackedInt32Array(2, -1): 3,
-PackedInt32Array(24, -1): 4,
-PackedInt32Array(22, -1): 5,
+PackedInt32Array(23, -1): 4,
+PackedInt32Array(21, -1): 5,
 PackedInt32Array(0, 3): 6,
-PackedInt32Array(33, -1): 7,
+PackedInt32Array(30, -1): 7,
 PackedInt32Array(4, -1): 8,
 PackedInt32Array(5, -1): 9,
 PackedInt32Array(3, -1): 10,
 PackedInt32Array(11, -1): 11,
-PackedInt32Array(21, -1): 12,
-PackedInt32Array(12, -1): 13,
-PackedInt32Array(0, 1): 14,
-PackedInt32Array(34, -1): 15,
-PackedInt32Array(8, -1): 16,
-PackedInt32Array(10, -1): 17,
-PackedInt32Array(26, -1): 18,
-PackedInt32Array(13, -1): 19,
-PackedInt32Array(35, -1): 20,
-PackedInt32Array(0, 2): 21,
-PackedInt32Array(14, -1): 22,
-PackedInt32Array(0, 0): 23,
-PackedInt32Array(9, -1): 24,
-PackedInt32Array(27, -1): 25,
-PackedInt32Array(7, -1): 26,
+PackedInt32Array(20, -1): 12,
+PackedInt32Array(0, 1): 13,
+PackedInt32Array(31, -1): 14,
+PackedInt32Array(8, -1): 15,
+PackedInt32Array(10, -1): 16,
+PackedInt32Array(25, -1): 17,
+PackedInt32Array(12, -1): 18,
+PackedInt32Array(32, -1): 19,
+PackedInt32Array(0, 2): 20,
+PackedInt32Array(13, -1): 21,
+PackedInt32Array(0, 0): 22,
+PackedInt32Array(9, -1): 23,
+PackedInt32Array(26, -1): 24,
+PackedInt32Array(7, -1): 25,
+PackedInt32Array(14, -1): 26,
 PackedInt32Array(15, -1): 27,
-PackedInt32Array(16, -1): 28,
-PackedInt32Array(5, 1): 29,
-PackedInt32Array(28, -1): 30,
-PackedInt32Array(0, 4): 31,
-PackedInt32Array(0, 5): 32,
-PackedInt32Array(0, 6): 33,
-PackedInt32Array(0, 14): 34,
-PackedInt32Array(0, 15): 35,
+PackedInt32Array(5, 1): 28,
+PackedInt32Array(27, -1): 29,
+PackedInt32Array(0, 4): 30,
+PackedInt32Array(0, 5): 31,
+PackedInt32Array(0, 6): 32,
+PackedInt32Array(0, 14): 33,
+PackedInt32Array(0, 15): 34,
+PackedInt32Array(16, -1): 35,
 PackedInt32Array(17, -1): 36,
-PackedInt32Array(18, -1): 37,
-PackedInt32Array(29, -1): 38,
+PackedInt32Array(28, -1): 37,
+PackedInt32Array(18, -1): 38,
 PackedInt32Array(19, -1): 39,
-PackedInt32Array(20, -1): 40,
-PackedInt32Array(0, 7): 41,
-PackedInt32Array(0, 10): 42,
-PackedInt32Array(0, 11): 43,
-PackedInt32Array(0, 8): 44,
-PackedInt32Array(25, -1): 45,
-PackedInt32Array(23, -1): 46,
-PackedInt32Array(0, 9): 47,
-PackedInt32Array(0, 13): 48,
-PackedInt32Array(0, 12): 49,
-PackedInt32Array(30, -1): 50,
-PackedInt32Array(31, -1): 51,
-PackedInt32Array(32, -1): 52,
-PackedInt32Array(0, -1): 0,
-PackedInt32Array(1, -1): 1
+PackedInt32Array(0, 7): 40,
+PackedInt32Array(0, 10): 41,
+PackedInt32Array(0, 11): 42,
+PackedInt32Array(0, 8): 43,
+PackedInt32Array(24, -1): 44,
+PackedInt32Array(22, -1): 45,
+PackedInt32Array(0, 9): 46,
+PackedInt32Array(0, 13): 47,
+PackedInt32Array(0, 12): 48,
+PackedInt32Array(29, -1): 49,
+PackedInt32Array(34, -1): 50,
+PackedInt32Array(33, -1): 51,
+PackedInt32Array(35, -1): 52,
+PackedInt32Array(0, -1): 0
 }
 probability_meta_key = "wfc_probability"
 
 [resource]
-script = ExtResource("8_pvbct")
-mapper = SubResource("Resource_iqmql")
+script = ExtResource("8_kv2rj")
+mapper = SubResource("Resource_ghtxy")
 complete_matrices = true
 axes = Array[Vector2i]([Vector2i(0, 1), Vector2i(1, 0)])
-axis_matrices = Array[ExtResource("1_e7ui8")]([SubResource("Resource_j1lrn"), SubResource("Resource_yi1n5")])
-probabilities = PackedFloat32Array(1, 1, 1, 1, 1, 1, 0.01, 1, 1, 1, 1, 1, 1, 1, 0.01, 0.1, 1, 1, 1, 0.1, 1, 0.01, 0.1, 0.01, 1, 1, 1, 1, 1, 0.01, 0.5, 0.01, 0.01, 0.01, 0.01, 0.01, 0.1, 0.1, 0.5, 0.1, 0.1, 0.01, 0.01, 0.01, 0.01, 0.1, 0.1, 0.01, 0.01, 0.01, 1, 1, 1)
-edge_domain = SubResource("Resource_ll06u")
+axis_matrices = Array[ExtResource("1_3wh2b")]([SubResource("Resource_52qjd"), SubResource("Resource_ljay1")])
+probabilities = PackedFloat32Array(1, 1, 1, 1, 1, 1, 0.01, 1, 1, 1, 1, 1, 1, 0.01, 0.1, 1, 1, 1, 0.1, 1, 0.01, 0.1, 0.01, 1, 1, 1, 1, 1, 0.01, 0.5, 0.01, 0.01, 0.01, 0.01, 0.01, 0.1, 0.1, 0.5, 0.1, 0.1, 0.01, 0.01, 0.01, 0.01, 0.1, 0.1, 0.01, 0.01, 0.01, 1, 1, 1, 1)
+edge_domain = SubResource("Resource_q82ib")
 probabilities_enabled = true
 edge_condition_meta_name = "wfc_edge"

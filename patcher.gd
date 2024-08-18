@@ -83,3 +83,8 @@ func is_busy() -> bool:
 func _process(_delta: float) -> void:
 	if runner != null:
 		runner.update()
+
+func _exit_tree() -> void:
+	if runner != null:
+		runner.interrupt()
+		runner = null
