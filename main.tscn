@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://8gbabiwd4epy"]
+[gd_scene load_steps=25 format=4 uid="uid://8gbabiwd4epy"]
 
 [ext_resource type="Script" path="res://addons/wfc/nodes/layered_map_2d.gd" id="1_gu2sh"]
 [ext_resource type="Script" path="res://patcher.gd" id="1_k2kwp"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ducdosllqsbql" path="res://assets/tile_roof_icon.png" id="10_xr4d2"]
 [ext_resource type="Texture2D" uid="uid://dpuncbi4fol6k" path="res://assets/tile_sand_icon.png" id="11_hvofq"]
 [ext_resource type="Texture2D" uid="uid://bpj6ts6w32k5o" path="res://assets/tile_rails_icon.png" id="12_j1x5i"]
+[ext_resource type="Texture2D" uid="uid://daf1rs4ounxji" path="res://assets/tile_any_icon.png" id="14_icb2b"]
 [ext_resource type="Texture2D" uid="uid://d037avii7o8sk" path="res://assets/tool_paint_icon.png" id="14_vd0ys"]
 [ext_resource type="Texture2D" uid="uid://dypxccmrfr1m1" path="res://assets/tool_rect_icon.png" id="15_rlvaa"]
 [ext_resource type="Texture2D" uid="uid://bdsehf8wp7065" path="res://assets/restart_icon.png" id="16_wel8k"]
@@ -116,6 +117,13 @@ force_ac3 = true
 
 [sub_resource type="Resource" id="Resource_c8s01"]
 script = ExtResource("2_1de5x")
+
+[sub_resource type="GDScript" id="GDScript_peuhs"]
+script/source = "extends TileSelectButton
+
+func get_domain(patcher: WFC2DPatcher) -> WFCBitSet:
+	return WFCBitSet.new(patcher.rules.mapper.size(), true)
+"
 
 [sub_resource type="GDScript" id="GDScript_knp3g"]
 script/source = "extends Button
@@ -221,6 +229,18 @@ expand_icon = true
 script = ExtResource("10_01r7m")
 meta_name = "wfc_rails"
 
+[node name="select_any" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" groups=["tile_select_buttons"]]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+tooltip_text = "Any tile
+(re-generate area)"
+toggle_mode = true
+action_mode = 0
+icon = ExtResource("14_icb2b")
+expand_icon = true
+script = SubResource("GDScript_peuhs")
+meta_name = "wfc_rails"
+
 [node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Mode"
@@ -253,6 +273,7 @@ horizontal_alignment = 1
 [node name="restart_button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
+tooltip_text = "Restart"
 icon = ExtResource("16_wel8k")
 expand_icon = true
 
@@ -260,6 +281,7 @@ expand_icon = true
 visible = false
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
+tooltip_text = "Exit"
 icon = ExtResource("17_soe8w")
 expand_icon = true
 

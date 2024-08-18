@@ -59,5 +59,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and not event.is_pressed():
 			over()
+		elif event.button_index == MOUSE_BUTTON_RIGHT:
+			cancel()
 	elif  event.is_action_pressed("ui_cancel"):
 		cancel()

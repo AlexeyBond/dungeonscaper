@@ -67,10 +67,11 @@ func _init(map_: Node, rules_: WFCRules2D, fixed_domains: Dictionary):
 	assert(1 in is_fixed_domain)
 
 func pick_divergence_option_at(options: Array[int], cell: int) -> int:
-	var preferred_option := initial_state[cell]
-	var preferred_option_index := options.find(preferred_option)
-	if preferred_option_index >= 0:
-		return options.pop_at(preferred_option_index)
+	if not is_fixed_domain[cell]:
+		var preferred_option := initial_state[cell]
+		var preferred_option_index := options.find(preferred_option)
+		if preferred_option_index >= 0:
+			return options.pop_at(preferred_option_index)
 
 	return super(options, cell)
 
