@@ -1,6 +1,7 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://drvu3d0pwtf50"]
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://drvu3d0pwtf50"]
 
 [ext_resource type="Texture2D" uid="uid://dafirfo2502o" path="res://addons/wfc/examples/assets/kenney-tiny-dungeon/tilemap_packed.png" id="1_eqa2d"]
+[ext_resource type="PackedScene" uid="uid://dwhibeu8fp25u" path="res://addons/wfc/examples/helpers/tile_scene_1.tscn" id="2_vpoks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4hvi"]
 texture = ExtResource("1_eqa2d")
@@ -63,7 +64,11 @@ texture = ExtResource("1_eqa2d")
 8:7/0 = 0
 8:7/0/probability = 0.01
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_y2j2f"]
+scenes/1/scene = ExtResource("2_vpoks")
+
 [resource]
 custom_data_layer_0/name = "wfc_rails"
 custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_t4hvi")
+sources/1 = SubResource("TileSetScenesCollectionSource_y2j2f")
