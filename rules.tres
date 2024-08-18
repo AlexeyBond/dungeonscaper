@@ -844,7 +844,6 @@ layer_names = Array[String](["main", "decorations"])
 layer_mappers = Array[ExtResource("3_5wrqu")]([SubResource("Resource_qqlt2"), SubResource("Resource_41bit")])
 use_probability_meta = false
 attrs_to_id = {
-PackedInt32Array(1, -1): 1,
 PackedInt32Array(6, -1): 2,
 PackedInt32Array(2, -1): 3,
 PackedInt32Array(24, -1): 4,
@@ -896,7 +895,8 @@ PackedInt32Array(0, 12): 49,
 PackedInt32Array(30, -1): 50,
 PackedInt32Array(31, -1): 51,
 PackedInt32Array(32, -1): 52,
-PackedInt32Array(0, -1): 0
+PackedInt32Array(0, -1): 0,
+PackedInt32Array(1, -1): 1
 }
 probability_meta_key = "wfc_probability"
 
