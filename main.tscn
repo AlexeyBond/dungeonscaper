@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://8gbabiwd4epy"]
+[gd_scene load_steps=26 format=4 uid="uid://8gbabiwd4epy"]
 
 [ext_resource type="Script" path="res://addons/wfc/nodes/layered_map_2d.gd" id="1_gu2sh"]
 [ext_resource type="Script" path="res://patcher.gd" id="1_k2kwp"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://addons/wfc/solver/solver_settings.gd" id="8_7deob"]
 [ext_resource type="Theme" uid="uid://clo0k0o6j0r45" path="res://theme.tres" id="9_oaqha"]
 [ext_resource type="Script" path="res://tile_select_button.gd" id="10_01r7m"]
+[ext_resource type="Theme" uid="uid://dn8h6der8oevl" path="res://select-buttons-theme.tres" id="10_64b2t"]
 [ext_resource type="Texture2D" uid="uid://ducdosllqsbql" path="res://assets/tile_roof_icon.png" id="10_xr4d2"]
 [ext_resource type="Texture2D" uid="uid://dpuncbi4fol6k" path="res://assets/tile_sand_icon.png" id="11_hvofq"]
 [ext_resource type="Texture2D" uid="uid://bpj6ts6w32k5o" path="res://assets/tile_rails_icon.png" id="12_j1x5i"]
@@ -199,6 +200,8 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Walls"
+focus_mode = 0
+theme = ExtResource("10_64b2t")
 toggle_mode = true
 action_mode = 0
 icon = ExtResource("10_xr4d2")
@@ -210,6 +213,8 @@ meta_name = "wfc_wall"
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Ground"
+focus_mode = 0
+theme = ExtResource("10_64b2t")
 toggle_mode = true
 action_mode = 0
 icon = ExtResource("11_hvofq")
@@ -222,6 +227,8 @@ minus_meta = Array[String](["wfc_rails"])
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Rails"
+focus_mode = 0
+theme = ExtResource("10_64b2t")
 toggle_mode = true
 action_mode = 0
 icon = ExtResource("12_j1x5i")
@@ -234,6 +241,8 @@ custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Any tile
 (re-generate area)"
+focus_mode = 0
+theme = ExtResource("10_64b2t")
 toggle_mode = true
 action_mode = 0
 icon = ExtResource("14_icb2b")
@@ -250,6 +259,8 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Pencil"
+focus_mode = 0
+theme = ExtResource("10_64b2t")
 toggle_mode = true
 icon = ExtResource("14_vd0ys")
 expand_icon = true
@@ -259,6 +270,8 @@ script = SubResource("GDScript_knp3g")
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 tooltip_text = "Rect"
+focus_mode = 0
+theme = ExtResource("10_64b2t")
 toggle_mode = true
 icon = ExtResource("15_rlvaa")
 icon_alignment = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c17prw8aj7jo1"]
+[gd_scene load_steps=6 format=3 uid="uid://c17prw8aj7jo1"]
 
 [sub_resource type="GDScript" id="GDScript_k4g2u"]
 script/source = "extends Node2D
@@ -16,13 +16,43 @@ func go_to_main():
 	get_tree().change_scene_to_file(\"res://main.tscn\")
 "
 
+[sub_resource type="LabelSettings" id="LabelSettings_o6dje"]
+font_size = 54
+
+[sub_resource type="Animation" id="Animation_voycy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Label:label_settings:font_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [54]
+}
+
 [sub_resource type="Animation" id="Animation_3jt4p"]
 resource_name = "run"
 length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasLayer/CenterContainer/Label:modulate")
+tracks/0/path = NodePath("CanvasLayer/Label:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -51,20 +81,17 @@ tracks/1/keys = {
 "method": &"go_to_main"
 }]
 }
-
-[sub_resource type="Animation" id="Animation_voycy"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasLayer/CenterContainer/Label:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Label:label_settings:font_size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.93333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [54, 88]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_werbv"]
@@ -86,18 +113,20 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Label" type="Label" parent="CanvasLayer/CenterContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_font_sizes/font_size = 52
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 88
 text = "Dungeonscaper"
+label_settings = SubResource("LabelSettings_o6dje")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
